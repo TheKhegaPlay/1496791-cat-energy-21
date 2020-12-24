@@ -1,58 +1,59 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <header class="header">
       <a class="header__logo" href="index.html">
-        <img src="img/logo-mobile.svg" alt="Логотип">
-        <img src="img/logo.png" alt="Название">
+        <img src="img/logo-mobile.svg" alt="Логотип" class="header__img-logo-mobile">
+        <img src="img/logo.png" alt="Название" class="header__img-name">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="header__main-nav">
+        <button class="header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item navigation__item--active">
-              <a href="#">
+        <div class="header__navigation">
+          <ul class="header__list">
+            <li class="header__item header__item--active">
+              <a href="#" class="header__link">
                 Главная
               </a>
             </li>
-            <li class="navigation__item">
-              <a href="catalog.html">
+            <li class="header__item">
+              <a href="catalog.html" class="header__link">
                 Каталог продукции
               </a>
             </li>
-            <li class="navigation__item">
-              <a href="form.html">
+            <li class="header__item">
+              <a href="form.html" class="header__link">
                 Подбор программы
               </a>
-          </li>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="main">
-      <h1 class="home-title">
-        Функциональное<br> питание для котов
-      </h1>
       <section class="block-title">
+        <h1 class="home-title">
+          Функциональное<br> питание для котов
+        </h1>
         <h2 class="visually-hidden">питание для котов</h2>
         <p class="block-title__slogan">
           Занялся собой? Займись котом!
         </p>
         <div class="block-title__product">
         </div>
-        <a class="block-title__button">
+        <a href="form.html" class="block-title__button button">
           Подобрать программу
         </a>
       </section>
       <section class="programs">
         <h2 class="visually-hidden">Наборы</h2>
-        <div class="programs__item">
+        <div class="programs__item programs__slim">
           <h2 class="programs__title">
             Похудение
           </h2>
@@ -61,10 +62,10 @@
           </p>
           <h3 class="programs__link">
             каталог slim
-            <img src="img/arrow.svg" alt="стрелка для перехода в каталог">
+            <img src="img/arrow.svg" alt="стрелка для перехода в каталог" class="programs__arrow">
           </h3>
         </div>
-        <div class="programs__item">
+        <div class="programs__item programs__weight">
           <h2 class="programs__title">
             Набор массы
           </h2>
@@ -73,7 +74,7 @@
           </p>
           <h3 class="programs__link">
             каталог pro
-            <img src="img/arrow.svg" alt="стрелка для перехода в каталог">
+            <img src="img/arrow.svg" alt="стрелка для перехода в каталог" class="programs__arrow">
           </h3>
         </div>
       </section>
@@ -96,34 +97,47 @@
         </ul>
       </section>
       <section class="example">
-        <h2 class="visually-hidden">Пример</h2>
-        <h2 class="example__title">Живой пример</h2>
+        <h2 class="visually-hidden">
+          Пример
+        </h2>
+        <h2 class="example__title">
+          Живой пример
+        </h2>
         <p class="example__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
           При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <dl class="kilogram result">
-          <dt class="kilogram__title">5 кг</dt>
-          <dd class="kilogram__text">снижение веса</dd>
+        <dl class="example__kilogram example__result">
+          <dt class="example__kilogram--title example__result--title">
+            5 кг
+          </dt>
+          <dd class="example__kilogram--text example__result--text">
+            снижение веса
+          </dd>
         </dl>
-        <dl class="days result">
-          <dt class="days__title">60 дней</dt>
-          <dd class="days__text">затрачено времени</dd>
+        <dl class="example__days example__result">
+          <dt class="example__days--title example__result--title">
+            60 дней
+          </dt>
+          <dd class="example__days--text example__result--text">
+            затрачено времени
+          </dd>
         </dl>
-        <p class="expenses">
+        <p class="example__expenses">
           Затраты на питание: 15 000 РУБ.
         </p>
-        <div class="image-cat">
+        <div class="example__image-cat">
         </div>
-        <div class="switch">
-          <input id="switch" type="checkbox">
-          <label for="switch">
+        <div class="example__switch">
+          <input id="switch" type="checkbox" class="example__input">
+          <label for="switch" class="example__label">
           </label>
-          <div class="position" data-checked="was" data-unchecked="now"></div>
-          <div class="switch__was">
+          <div class="example__position" data-checked="was" data-unchecked="now">
+          </div>
+          <div class="example__switch--was">
             Было
           </div>
-          <div class="switch__now">
+          <div class="example__switch--now">
             Стало
           </div>
         </div>
@@ -132,40 +146,43 @@
     <footer class="footer">
       <section class="map">
         <h2 class="visually-hidden">Местоположение</h2>
-        <div class="invite">
-          <span class="invite__title">
-            приглашаем
-            к сотрудничеству дилеров!
-          </span>
-          <p class="invite__text">
+        <div class="map__invite">
+          <h3 class="map__title">
+            приглашаем<br>
+            к сотрудничеству<br>
+            дилеров!
+          </h3>
+          <p class="map__text">
             ул. Большая
             Конюшенная, д. 19/8
             Санкт-Петербург
           </p>
         </div>
-        <div class="google-map">
+        <div class="map__google-map">
           <iframe src="https://www.google.com/maps/d/embed?mid=1q_15uyP5H1KlyAFEHQPpGh2_BMMGcs47&hl=ru" height="400"></iframe>
         </div>
       </section>
-      <section class="link">
+      <section class="social-networks">
         <h2 class="visually-hidden">Соцсети</h2>
-        <div class="link__logo">
-          <img src="img/logo.png" alt="Название">
-        </div>
-        <div class="link__social-network">
-          <a href="">
-            <img src="img/icon_vkontakte.svg" alt="Ссылка на группу">
+        <img src="img/logo.png" alt="Название" class="social-networks__img-name">
+        <div class="social-networks__links">
+          <a href="https://vk.com/htmlacademy" class="social-networks__link">
+            <img src="img/icon_vkontakte.svg" alt="Ссылка на группу" class="social-networks__link--icon">
           </a>
-          <a href="">
-            <img src="img/icon_instagram.svg" alt="Ссылка на инстаграм">
+          <a href="https://www.instagram.com/htmlacademy/" class="social-networks__link">
+            <img src="img/icon_instagram.svg" alt="Ссылка на инстаграм" class="social-networks__link--icon">
           </a>
-          <a href="">
-            <img src="img/icon_facebook.svg" alt="Ссылка на фейсбук">
+          <a href="https://www.facebook.com/htmlacademy/" class="social-networks__link">
+            <img src="img/icon_facebook.svg" alt="Ссылка на фейсбук" class="social-networks__link--icon">
           </a>
         </div>
-        <div class="link__html-academy">
-          HTML Academy
-          <img src="img/htmlacademy.svg" alt="Лого академии" width="27" height="34">
+        <div class="social-networks__html-academy">
+          <a href="" class="social-networks__html-academy--link">
+            <span class="social-networks__html-academy--text">
+              HTML Academy
+            </span>
+            <img src="img/htmlacademy.svg" alt="Лого академии" width="27" height="34" class="social-networks__html-academy--icon">
+          </a>
         </div>
       </section>
     </footer>

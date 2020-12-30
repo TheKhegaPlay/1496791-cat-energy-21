@@ -16,24 +16,36 @@
 .way-of-working__item {
   .paragraph();
   padding: 0;
-  padding-left: 100px;
+  padding-left: 20px;
   padding-top: 13px;
   padding-bottom: 13px;
-  max-width: 199px;
+  max-width: 280px;
+  display: flex;
+}
+
+.way-of-working__item::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: @background-color-green;
 }
 
 .way-of-working__composition {
-  background: url(../img/leaf.svg) no-repeat 20px 10px;
+  background: url(../img/leaf.png) no-repeat left center;
 }
 
 .way-of-working__use {
-  background: url(../img/water.svg) no-repeat 20px 10px;
+  background: url(../img/water.png) no-repeat 20px 10px;
 }
 
 .way-of-working__replace {
-  background: url(../img/cutlery.svg) no-repeat 20px 10px;
+  background: url(../img/cutlery.png) no-repeat 20px 10px;
 }
 
 .way-of-working__changes {
-  background: url(../img/clock.svg) no-repeat 20px 10px;
+  background: url(../img/clock.png) no-repeat 20px 10px;
 }
+

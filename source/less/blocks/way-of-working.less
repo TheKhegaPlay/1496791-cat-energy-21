@@ -5,6 +5,8 @@
 .way-of-working__title {
   .title-h1();
   margin: 0 auto;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .way-of-working__list {
@@ -23,8 +25,10 @@
   display: flex;
 }
 
-.way-of-working__item::before {
-  content: "";
+.way-of-working__composition::before {
+  content: url("../img/leaf.png");
+  line-height: 80px;
+  text-align: center;
   display: block;
   flex-shrink: 0;
   margin-right: 20px;
@@ -33,19 +37,38 @@
   background-color: @background-color-green;
 }
 
-.way-of-working__composition {
-  background: url(../img/leaf.png) no-repeat left center;
+.way-of-working__use::before {
+  content: url("../img/water.png");
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: @background-color-green;
 }
 
-.way-of-working__use {
-  background: url(../img/water.png) no-repeat 20px 10px;
+.way-of-working__replace::before {
+  content: url("../img/cutlery.png");
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: @background-color-green;
 }
 
-.way-of-working__replace {
-  background: url(../img/cutlery.png) no-repeat 20px 10px;
+.way-of-working__changes::before {
+  content: url("../img/clock.png");
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: @background-color-green;
 }
-
-.way-of-working__changes {
-  background: url(../img/clock.png) no-repeat 20px 10px;
-}
-

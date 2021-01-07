@@ -56,11 +56,17 @@
   margin-top: 40px;
   margin-bottom: 35px;
   background: url("../img/case.svg") no-repeat;
-}
-
-.additional-products__present--paragraph {
-  margin: 0 auto;
-  padding: 0;
   text-align: center;
   .paragraph();
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.additional-products__present::before {
+  content: url("../img/icon_gift.svg");
+  margin-left: 101px;
+  margin-top: 58px;
+  display: block;
+  height: 80px;
+  width: 78px;
 }

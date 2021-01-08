@@ -5,6 +5,8 @@
 .way-of-working__title {
   .title-h1();
   margin: 0 auto;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .way-of-working__list {
@@ -16,24 +18,57 @@
 .way-of-working__item {
   .paragraph();
   padding: 0;
-  padding-left: 100px;
+  padding-left: 20px;
   padding-top: 13px;
   padding-bottom: 13px;
-  max-width: 199px;
+  max-width: 280px;
+  display: flex;
 }
 
-.way-of-working__composition {
-  background: url(../img/leaf.svg) no-repeat 20px 10px;
+.way-of-working__composition::before {
+  content: url("../img/leaf.png");
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: @background-color-green;
 }
 
-.way-of-working__use {
-  background: url(../img/water.svg) no-repeat 20px 10px;
+.way-of-working__use::before {
+  content: url("../img/water.png");
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: @background-color-green;
 }
 
-.way-of-working__replace {
-  background: url(../img/cutlery.svg) no-repeat 20px 10px;
+.way-of-working__replace::before {
+  content: url("../img/cutlery.png");
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: @background-color-green;
 }
 
-.way-of-working__changes {
-  background: url(../img/clock.svg) no-repeat 20px 10px;
+.way-of-working__changes::before {
+  content: url("../img/clock.png");
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: @background-color-green;
 }
